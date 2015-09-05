@@ -1,4 +1,5 @@
 {
+    "name": "namelesscoder/numerolog-lavacharts",
     "require": {
         "namelesscoder/numerolog": "^1.0",
         "khill/lavacharts": "^2.5"
