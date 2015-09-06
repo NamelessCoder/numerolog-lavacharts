@@ -28,7 +28,7 @@ Then either integrate from anywhere by calling methods manually with an array as
 ```php
 $query = new \NamelessCoder\NumerologLavacharts\ChartQuery($_GET);
 $chart = new \NamelessCoder\NumerologLavacharts\NumerologChart();
-echo $chart->renderGraphQuery($query);
+echo $chart->renderChartQuery($query);
 ```
 
 Alternatively, do the same but configure the ChartQuery manually:
@@ -39,7 +39,7 @@ $query->setChartLabel('My special chart');
 $query->setChartHeight(400);
 $query->setChartWidth(800);
 $chart = new \NamelessCoder\NumerologLavacharts\NumerologChart();
-echo $chart->renderGraphQuery($query);
+echo $chart->renderChartQuery($query);
 ```
 
 The output will include both the `<div>` that will contain the graph as well as every
