@@ -55,6 +55,10 @@ class ChartQuery extends Query {
 	 */
 	protected $count = 20;
 
+	/**
+	 * @var boolean
+	 */
+	protected $scriptOnly = FALSE;
 
 	/**
 	 * @var array
@@ -179,6 +183,21 @@ class ChartQuery extends Query {
 	 */
 	public function setChartDateTimeFormat($chartDateTimeFormat) {
 		$this->chartDateTimeFormat = $chartDateTimeFormat;
+	}
+
+	/**
+	 * @return boolean
+	 */
+	public function getScriptOnly() {
+		return $this->scriptOnly;
+	}
+
+	/**
+	 * @param boolean $scriptOnly
+	 * @return void
+	 */
+	public function setScriptOnly($scriptOnly) {
+		$this->scriptOnly = $scriptOnly;
 	}
 
 	/**

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a2f247a7b002d3161ce06e44ea1a8864",
+    "hash": "55757f68ec7e05bc1b4e2f35ef02278e",
     "packages": [
         {
             "name": "khill/lavacharts",
@@ -60,16 +60,16 @@
         },
         {
             "name": "namelesscoder/numerolog",
-            "version": "1.0.0",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NamelessCoder/numerolog.git",
-                "reference": "cbb9544099c01d9fd546f60565a975fe597ab8e4"
+                "reference": "fd2a22dc5d331113b46a5ab392a1cffd36fa3bc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NamelessCoder/numerolog/zipball/cbb9544099c01d9fd546f60565a975fe597ab8e4",
-                "reference": "cbb9544099c01d9fd546f60565a975fe597ab8e4",
+                "url": "https://api.github.com/repos/NamelessCoder/numerolog/zipball/fd2a22dc5d331113b46a5ab392a1cffd36fa3bc5",
+                "reference": "fd2a22dc5d331113b46a5ab392a1cffd36fa3bc5",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-09-05 16:22:40"
+            "time": "2015-09-06 21:22:05"
         },
         {
             "name": "nesbot/carbon",

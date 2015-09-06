@@ -16,7 +16,7 @@ class NumerologChart extends Lavacharts {
 	 * @param ChartQuery $query
 	 * @return string
 	 */
-	public function renderGraphQuery(ChartQuery $query) {
+	public function renderChartQuery(ChartQuery $query) {
 		if (Query::ACTION_GET !== $query->getAction()) {
 			throw new \RuntimeException('NumerologChart only accepts the Numerolog `get` command');
 		}
@@ -34,6 +34,9 @@ class NumerologChart extends Lavacharts {
 			$chart->setOptions($chartAttributes);
 		}
 		$chart->datatable($table);
+		if ($query->getScriptOnly()) {
+			return $this->render($chartType, $chartLabel, $query->getChartId());
+		}
 		return $this->render($chartType, $chartLabel, $query->getChartId(), array(
 			'width' => $query->getChartWidth(),
 			'height' => $query->getChartHeight()
