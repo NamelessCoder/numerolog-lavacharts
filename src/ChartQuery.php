@@ -69,7 +69,7 @@ class ChartQuery extends Query {
 	 * @return integer
 	 */
 	public function getChartWidth() {
-		return $this->chartWidth;
+		return (integer) $this->chartWidth;
 	}
 
 	/**
@@ -77,14 +77,14 @@ class ChartQuery extends Query {
 	 * @return void
 	 */
 	public function setChartWidth($chartWidth) {
-		$this->chartWidth = $chartWidth;
+		$this->chartWidth = (integer) $chartWidth;
 	}
 
 	/**
 	 * @return integer
 	 */
 	public function getChartHeight() {
-		return $this->chartHeight;
+		return (integer) $this->chartHeight;
 	}
 
 	/**
@@ -92,7 +92,7 @@ class ChartQuery extends Query {
 	 * @return void
 	 */
 	public function setChartHeight($chartHeight) {
-		$this->chartHeight = $chartHeight;
+		$this->chartHeight = (integer) $chartHeight;
 	}
 
 	/**
