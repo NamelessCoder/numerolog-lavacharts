@@ -17,7 +17,7 @@ if (!$query->getCounter()) {
 	$client->setPackage($query->getPackage());
 	$client->setToken($query->getToken());
 	$counters = $client->query($countersQuery);
-	foreach (array_keys($counters['results']) as $index => $counterName) {
+	foreach (array_keys($counters['values']) as $index => $counterName) {
 		$counterNumber = $i + 1;
 		$query->setCounter($counterName);
 		$query->setChartId('chart-' . $counterNumber);
