@@ -1,5 +1,6 @@
 {
     "name": "namelesscoder/numerolog-lavacharts",
+    "description": "Chart renderer for Numerolog data sources",
     "require": {
         "namelesscoder/numerolog": "^1.0",
         "khill/lavacharts": "^2.5"
