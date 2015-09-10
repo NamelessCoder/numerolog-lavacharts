@@ -20,11 +20,11 @@ class NumerologChart extends Lavacharts {
 		if (Query::ACTION_GET !== $query->getAction()) {
 			throw new \RuntimeException('NumerologChart only accepts the Numerolog `get` command');
 		}
-		$client = new Client();
+		$client = $this->getNumerologClient();
 		$response = $client->query($query);
 		$chartType = $query->getChartType();
 		$chartLabel = $query->getChartLabel();
-		$chartTitle = $chartLabel . ':' . $query->getCounter();
+		$chartTitle = $chartLabel . ': ' . $query->getCounter();
 		$chartAttributes = $query->getChartAttributes();
 
 		$table = $this->fillWithResponseData($response['values'], $query);
@@ -62,6 +62,13 @@ class NumerologChart extends Lavacharts {
 			));
 		}
 		return $table;
+	}
+
+	/**
+	 * @return Client
+	 */
+	protected function getNumerologClient() {
+		return new Client();
 	}
 
 }
